@@ -1,7 +1,13 @@
-import { render, screen } from "@testing-library/react";
+import { fireEvent, render, screen } from "@testing-library/react";
 import SignIn from "./sign-in";
 
+const navigateMock = vi.fn();
+
 describe("This will test the SignIn component", () => {
+  vi.mock("react-router-dom", () => ({
+    useNavigate: () => navigateMock,
+  }));
+
   test("Should have a title", async () => {
     render(<SignIn />);
 
@@ -29,5 +35,15 @@ describe("This will test the SignIn component", () => {
 
     const button = await screen.findByRole("button", { name: "Sign In" });
     expect(button).toBeInTheDocument();
+  });
+
+  test("Should call the navigate function when the button is clicked", async () => {
+    render(<SignIn />);
+
+    const button = await screen.findByRole("button", { name: "Sign In" });
+
+    fireEvent.click(button);
+
+    expect(navigateMock).toHaveBeenCalledTimes(1);
   });
 });
