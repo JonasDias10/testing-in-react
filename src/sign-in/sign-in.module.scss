@@ -8,7 +8,8 @@
     height: 100vh;
 
     form {
-        padding: 1rem;
+        background-color: #fff;
+        padding: 1rem 2rem;
         border-radius: 1rem;
         display: flex;
         flex-direction: column;
@@ -26,15 +27,16 @@
 
         button {
             background-color: #3b82f6;
-            color: #000;
+            color: #fff;
             height: 40px;
             width: 100%;
             border-radius: 0.5rem;
         }
 
         button:hover {
-            color: #fff;
-            background-color: #2563eb;
+            border: #3b82f6 solid 2px;
+            background-color: #fff;
+            color: #3b82f6;
         }
     }
     

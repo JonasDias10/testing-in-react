@@ -12,25 +12,16 @@ export default function SignIn() {
 
   return (
     <div className={styles.container}>
-      <h1>Sign In</h1>
-
       <form onSubmit={handleSubmit}>
-        <input
-          type="email"
-          id="email"
-          name="email"
-          placeholder="Email"
-          value="zdias1413@gmail.com"
-          required
-        />
+        <h1>Sign In</h1>
+
+        <input type="email" id="email" name="email" placeholder="Email" />
 
         <input
           type="password"
           id="password"
           name="password"
-          value="123456"
           placeholder="Password"
-          required
         />
 
         <button type="submit">Sign In</button>

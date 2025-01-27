@@ -10,9 +10,11 @@ export default function Home() {
 
   return (
     <div className={styles.container}>
-      <h1>Home</h1>
+      <div>
+        <h1>Home</h1>
 
-      <button onClick={handleSignOut}>Sign Out</button>
+        <button onClick={handleSignOut}>Sign Out</button>
+      </div>
     </div>
   );
 }
