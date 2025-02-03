@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "name": "John Doe",
+    "email": "johndoe@example.com",
+    "username": "johndoe"
+  },
+  {
+    "id": 2,
+    "name": "Jane Doe",
+    "email": "janedoe@example.com",
+    "username": "janedoe"
+  },
+  {
+    "id": 3,
+    "name": "Alice",
+    "email": "alice@example.com",
+    "username": "alice123"
+  }
+]
