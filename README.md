@@ -35,7 +35,3 @@ A React project with testing setup using Vitest, React Testing Library, and Cypr
      ```sh
      npx cypress open
      ```
-
----
-
-#### **Author: Jonas Dias | [Social Media](https://jonas-dias.netlify.app/) | Thank You**
